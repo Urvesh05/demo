@@ -1,20 +1,44 @@
 package com.slk.task5;
 
-import java.util.Comparator;
-
 public class PriorityOueueComparetorId implements Comparable<PriorityQueueEmployee>
 {
 
 	@Override
-	public int compareTo(PriorityQueueEmployee emp)
-	{
+	public int compareTo(PriorityQueueEmployee o) {
+		// TODO Auto-generated method stub
 		
-		return this.getId.compareTo(emp.getId());
+		if(o.getId()<o.getId())
+		{
+			return 1;
+		}
+		else if(o.getId()>o.getId())
+		{
+			return -1;
+		}
+		
+		return 0;
 	}
 
-	public PriorityOueueComparetorId getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+		
+		
+		//return o1.getId().compareTo(o2.getId());
+		
+		
+		//return o1.getId()-o2.getId();
+		// Sort By Id
+		
+		/*
+				 if(o1.getId() > o2.getId())
+				 {
+			            return 1;
+			        } 
+				 else 
+			        {
+			            return -1;
+			        }
+				*/ 
+		
+
 
 }

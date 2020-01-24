@@ -1,45 +1,46 @@
 package com.slk.task5;
 
-public class PriorityQueueEmployee {
+public class PriorityQueueEmployee implements Comparable<PriorityQueueEmployee>{
+	
 	
 	int id;  
-	String name;
-	public PriorityQueueEmployee(int id,String name) 
+	//String name;
+	
+	PriorityQueueEmployee(int id) 
 	{
 		
 		  this.id = id;  
-		  this.name = name; 
+		 // this.name = name; 
 	}
-	
-	public int getId()
-	{
+	public Integer getId() {
 		return id;
 	}
-	
-	public int setId(int id)
-	{
-		return this.id=id;
+	public void setId(Integer id) {
+		this.id = id;
 	}
-	/*
-	public String getName()
-	{
-		return name;
-	}
-	public void setName(String name)
-	{
-		this.name=name;
-
-	}*/
-	
-
-
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return id+name;
+		return "PriorityQueueEmployee [id=" + id + "]";
 	}
 
-	
+	@Override
+	public int compareTo(PriorityQueueEmployee o) {
+		// TODO Auto-generated method stub
+		
+		
+		return this.getId().compareTo(o.getId());
+		/*if(o.getId()<o.getId())
+		{
+			return 1;
+		}
+		else if(o.getId()>o.getId())
+		{
+			return -1;
+		}
+		
+		return 0;*/
+	}
+
 	
 }
 
