@@ -1,6 +1,5 @@
 package slk;
 
-import java.awt.image.SampleModel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
