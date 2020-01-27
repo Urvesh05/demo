@@ -24,7 +24,7 @@ public class MapSorting {
 		hm.put(15, "Swarit");  
 		hm.put(9, "Neelesh");  
 		
-		
+		System.out.println("\n=========== Map Sorting Key Base==========");
 		System.out.println("\n=======Before key Sorting==========="); 
 		
 		Iterator <Integer> it = hm.keySet().iterator();         
@@ -89,6 +89,8 @@ public class MapSorting {
 		hm.put(15, "Swarit");  
 		hm.put(9, "Neelesh");  
 		
+		
+		System.out.println("\n=========== Map Sorting Value Base==========");
 		System.out.println("\n========Before value Sorting==========="); 
 		
 		Set set = hm.entrySet();

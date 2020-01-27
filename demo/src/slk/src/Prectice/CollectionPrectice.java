@@ -1,11 +1,7 @@
-package Prectice;
+package slk.src.Prectice;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import jdk.internal.org.objectweb.asm.tree.analysis.Value;
-
-import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key;
 
 public class CollectionPrectice {
 

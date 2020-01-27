@@ -1,9 +1,11 @@
 package com.slk.task5;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class InsertionCollection {
 	
@@ -72,6 +74,25 @@ public class InsertionCollection {
 			System.out.println(itr.next());
 		}
 	}
+	
+	public static void map()
+	{
+		Map<Integer, String> map=new HashMap<Integer, String>();
+		map.put(102,"Jigu");
+		map.put(101,"Ganesh");
+		map.put(null, "100"); // null key
+		map.put(10, null); // null value
+	
+		//System.out.println(map);
+		
+		
+		
+		System.out.println("=======Map Interface========");;
+		for(Map.Entry m:map.entrySet())
+		{
+			System.out.println(m.getKey()+" "+m.getValue());
+		}
+	}
 
 	
 
@@ -82,6 +103,7 @@ public class InsertionCollection {
 		InsertionCollection.arrayListInsertion();
 		InsertionCollection.likedList();
 		InsertionCollection.hashSet();
+		InsertionCollection.map();
 	}
 
 }

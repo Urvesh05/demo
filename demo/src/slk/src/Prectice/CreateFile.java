@@ -1,3 +1,5 @@
+package slk.src.Prectice;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

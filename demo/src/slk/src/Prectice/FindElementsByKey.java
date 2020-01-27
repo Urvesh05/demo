@@ -1,3 +1,5 @@
+package slk.src.Prectice;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,21 +16,22 @@ public class FindElementsByKey {
         Map<String, Integer> map = new HashMap<String, Integer>(); 
   
         // Mapping int values to string keys 
-        map.put("Geeks", 10); 
-        map.put("4", 15); 
-        map.put("Geeks", 20); 
-        map.put("Welcomes", 25); 
-        map.put("You", 30); 
+        map.put("Heppy", 10); 
+        map.put("Hari", 15); 
+        map.put("Ronak", 20); 
+        map.put("Sanjay", 25); 
+        map.put("Yogi", 30); 
   
         // Displaying the Map 
         System.out.println("Initial Mappings are: " + map); 
   
-        // Getting the value of "Geeks" 
-        System.out.println("The Value is: " + map.get("Geeks")); 
+        // Getting the value 
+        System.out.println("The Value is: " + map.get("Yogi")); 
   
-        // Getting the value of "You" 
-        System.out.println("The Value is: " + map.get("You")); 
-		
+        // Getting the value 
+        System.out.println("The Value is: " + map.get("Ronak")); 
+        
+      
 	}
 
 }

@@ -14,7 +14,7 @@ public class ExceptionHandling1 {
 	  
 	class TestExceptionChild extends ExceptionHandling1
 	{  
-	  void msg1()throws IOException //Compile Time Error (checked exception)
+	  void msg1()
 	  {  
 	    System.out.println("TestExceptionChild");  
 	  }  
