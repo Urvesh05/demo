@@ -3,7 +3,7 @@ package com.slk.task6.FileIo;
 import java.io.File;
 import java.io.IOException;
 
-public class ConstructFilePathExample {
+public class ConstructFilePathExample2 {
 	
 	//Construct file path
 	public static void constructFilePath()
@@ -23,7 +23,7 @@ public class ConstructFilePathExample {
 		
 		
 		System.out.println("====Construct file path File Path Create=====");
-		ConstructFilePathExample.constructFilePath();
+		ConstructFilePathExample2.constructFilePath();
 		
 		//All file Path Checked 
 		System.out.println("\n========File Path =======");

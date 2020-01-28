@@ -2,7 +2,7 @@ package com.slk.task6.FileIo;
 
 import java.io.File;
 
-public class SetPermission {
+public class SetPermission3 {
 	
 	
 	public static void allPermissiom()
@@ -156,11 +156,11 @@ public class SetPermission {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		SetPermission.allPermissiom();
-		SetPermission.setExcecute();
-		SetPermission.setWritebale();
-		SetPermission.setReadebale();
-		SetPermission.setReadyOnly();
+		SetPermission3.allPermissiom();
+		SetPermission3.setExcecute();
+		SetPermission3.setWritebale();
+		SetPermission3.setReadebale();
+		SetPermission3.setReadyOnly();
 		
 		
 	}

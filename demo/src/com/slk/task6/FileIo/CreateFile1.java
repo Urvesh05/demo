@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class CreateFile {
+public class CreateFile1 {
 	
 	
 	public static void createFile() //method to create new file.
@@ -93,7 +93,7 @@ public class CreateFile {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		CreateFile.createFile();
+		CreateFile1.createFile();
 		//CreateFile.createFile2();
 		//CreateFile.parthClass();
 		
