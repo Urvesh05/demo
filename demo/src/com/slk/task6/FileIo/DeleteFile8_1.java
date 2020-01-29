@@ -12,7 +12,7 @@ public class DeleteFile8_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		/*
+		
 		File file = new File("/home/urvesh.gayakwad/git/demo/demo/Abc/DeleteFile.txt");
 		
 		if(file.delete())
@@ -23,7 +23,9 @@ public class DeleteFile8_1 {
 			System.out.println("not Delete");
 		}
 		
-		*/
+	}
+		
+		/*
 		try
 		{	
 			
@@ -50,5 +52,5 @@ public class DeleteFile8_1 {
 				}
 		//System.out.println("Delete File");
 		}	
-
+*/
 }
