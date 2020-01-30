@@ -14,7 +14,7 @@ public class ConvertArrayToByteInToFile22 {
 		// TODO Auto-generated method stub
 
 		byte[] b="hello".getBytes();
-		File file  =new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\WindowsFile\\xyz.txt");
+		File file  =new File("/home/urvesh.gayakwad/git/demo/demo/Abc/abc.txt");
 		
 		
 		try {

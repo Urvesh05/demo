@@ -13,7 +13,7 @@ public class AssingFileContent20 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 	
-		DataInputStream di =new DataInputStream(new FileInputStream("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\WindowsFile\\xyz.txt"));
+		DataInputStream di =new DataInputStream(new FileInputStream("/home/urvesh.gayakwad/git/demo/demo/Abc/abc.txt"));
 		byte[] b= new byte[di.available()];//checked byte in file
 		di.readFully(b);
 		di.close();

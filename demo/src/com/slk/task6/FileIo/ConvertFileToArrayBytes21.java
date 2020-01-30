@@ -16,7 +16,7 @@ public class ConvertFileToArrayBytes21 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		File file  =new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\WindowsFile\\xyz.txt");
+		File file  =new File("/home/urvesh.gayakwad/git/demo/demo/Abc/abc.txt");
 		FileInputStream in=new FileInputStream(file);
 		
 		byte[] b = new byte[(int) file.length()];//cast to int

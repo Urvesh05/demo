@@ -19,10 +19,12 @@ public class WriteFileUTF8_19 {
 		
 		try {
 			
-			File file = new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\WindowsFile\\xyz.txt");
+			File file = new File("/home/urvesh.gayakwad/git/demo/demo/Abc/a.txt");
 			Writer write = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file),"UTF8"));
 			write.append("welcome ").append("\r\n");
 			write.append("जिद्दी");
+			
+			System.out.println("Insered Data In this File --> "+file);
 			write.flush();
 			write.close();
 			

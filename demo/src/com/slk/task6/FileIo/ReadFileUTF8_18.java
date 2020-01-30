@@ -21,7 +21,7 @@ public class ReadFileUTF8_18 {
 		try
 		{
 
-			File file = new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\WindowsFile\\xyz.txt");
+			File file = new File("/home/urvesh.gayakwad/git/demo/demo/Abc/a.txt");
 			BufferedReader br= new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF8"));
 			
 			String s;
