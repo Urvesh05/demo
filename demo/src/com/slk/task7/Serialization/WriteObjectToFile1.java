@@ -12,7 +12,7 @@ public class WriteObjectToFile1 {
 		
 		//write Data In ObjectOutputStream
 		
-		Demo d = new Demo("sahu",12);
+		Demo2 d = new Demo2("sahu",12);
 		
 		File file = new File("/home/urvesh.gayakwad/git/demo/demo/Abc/serilization.txt");
 		

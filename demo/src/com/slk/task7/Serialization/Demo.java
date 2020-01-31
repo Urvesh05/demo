@@ -35,10 +35,10 @@ public class Demo implements Serializable{
 		this.i = i;
 	}
 
-	@Override
-	public String toString() {
-		return "Serialization Data [Name= " + s + ", Id =" + i + "]";
-	}
-
+//	@Override
+//	public String toString() {
+//		return "Serialization Data [Name= " + s + ", Id =" + i + "]";
+//	}
+//
 
 }
