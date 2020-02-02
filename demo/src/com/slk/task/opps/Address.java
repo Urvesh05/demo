@@ -10,4 +10,14 @@ public class Address {
 	   
 	    
 	}
+
+	public void setStreet(String street) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setCountry(String country) {
+		// TODO Auto-generated method stub
+		https://mkyong.com/java/how-to-compress-serialized-object-into-file/
+	}
 }
