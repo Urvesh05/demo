@@ -16,45 +16,53 @@ public class CompressFileInFolder2 {
 	 */
 	
 	 List<String> filesListInDir = new ArrayList<String>();
+	 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//file
-		  File file = new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\Abc\\r.txt");
-	        String zipFileName = "C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\bc\\rt.txt";
+		  File file = new File("/home/urvesh.gayakwad/git/demo/demo/CompressFile/t.txt");//text file 
+	      String zipFileName = "/home/urvesh.gayakwad/git/demo/demo/CompressFile/s.zip";//t.txt file store in s.zip dir
 	        
 	        //dir
-	        File dir = new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\aaa");
-	        String zipDirName = "C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\aaa.zip";
+	        File dir = new File("/home/urvesh.gayakwad/git/demo/demo/CompressFile/temp");//temp directory into file abc.txt store in d.zip dir 
+	        String zipDirName = "/home/urvesh.gayakwad/git/demo/demo/CompressFile/d.zip";//dir to store in abc file 
 	        
 	       
 	        zipSingleFile(file, zipFileName);
 	        
-	        
-	       
+	        CompressFileInFolder2 zipFiles = new CompressFileInFolder2();
+	        zipFiles.zipDirectory(dir, zipDirName);
+	    
 	       }
 
-	       /**
-	        * This method zips the directory
-	        * @param dir
-	        * @param zipDirName
-	        */
-	       private void zipDirectory(File dir, String zipDirName) {
+	       
+	        //This method zips the directory
+	    
+	       private void zipDirectory(File dir, String zipDirName)
+	       {
 	           try {
 	               populateFilesList(dir);
+	               
 	               //now zip files one by one
 	               //create ZipOutputStream to write to the zip file
 	               FileOutputStream fos = new FileOutputStream(zipDirName);
+	               
 	               ZipOutputStream zos = new ZipOutputStream(fos);
-	               for(String filePath : filesListInDir){
+	               
+	               for(String filePath : filesListInDir)
+	               {
 	                   System.out.println("Zipping "+filePath);
+	                   
 	                   //for ZipEntry we need to keep only relative file path, so we used substring on absolute path
 	                   ZipEntry ze = new ZipEntry(filePath.substring(dir.getAbsolutePath().length()+1, filePath.length()));
 	                   zos.putNextEntry(ze);
+	                   
 	                   //read the file and write to ZipOutputStream
 	                   FileInputStream fis = new FileInputStream(filePath);
 	                   byte[] buffer = new byte[1024];
 	                   int len;
-	                   while ((len = fis.read(buffer)) > 0) {
+	                   while ((len = fis.read(buffer)) > 0) 
+	                   {
 	                       zos.write(buffer, 0, len);
 	                   }
 	                   zos.closeEntry();
@@ -62,19 +70,23 @@ public class CompressFileInFolder2 {
 	               }
 	               zos.close();
 	               fos.close();
-	           } catch (IOException e) {
+	           } catch (IOException e)
+	           {
 	               e.printStackTrace();
 	           }
 	       }
+	       
 	       
 	       /**
 	        * This method populates all the files in a directory to a List
 	        * @param dir
 	        * @throws IOException
 	        */
-	       private void populateFilesList(File dir) throws IOException {
+	       private void populateFilesList(File dir) throws IOException 
+	       {
 	           File[] files = dir.listFiles();
-	           for(File file : files){
+	           for(File file : files)
+	           {
 	               if(file.isFile()) filesListInDir.add(file.getAbsolutePath());
 	               else populateFilesList(file);
 	           }
@@ -85,19 +97,23 @@ public class CompressFileInFolder2 {
 	        * @param file
 	        * @param zipFileName
 	        */
-	       private static void zipSingleFile(File file, String zipFileName) {
+	       private static void zipSingleFile(File file, String zipFileName)
+	       {
 	           try {
 	               //create ZipOutputStream to write to the zip file
 	               FileOutputStream fos = new FileOutputStream(zipFileName);
 	               ZipOutputStream zos = new ZipOutputStream(fos);
+	               
 	               //add a new Zip Entry to the ZipOutputStream
 	               ZipEntry ze = new ZipEntry(file.getName());
 	               zos.putNextEntry(ze);
+	               
 	               //read the file and write to ZipOutputStream
 	               FileInputStream fis = new FileInputStream(file);
 	               byte[] buffer = new byte[1024];
 	               int len;
-	               while ((len = fis.read(buffer)) > 0) {
+	               while ((len = fis.read(buffer)) > 0)
+	               {
 	                   zos.write(buffer, 0, len);
 	               }
 	               
@@ -107,7 +123,7 @@ public class CompressFileInFolder2 {
 	               zos.close();
 	               fis.close();
 	               fos.close();
-	               System.out.println(file.getCanonicalPath()+" is zipped to "+zipFileName);
+	               System.out.println(file.getCanonicalPath()+"\n is zipped to "+zipFileName);
 	               
 	           } catch (IOException e) {
 	               e.printStackTrace();

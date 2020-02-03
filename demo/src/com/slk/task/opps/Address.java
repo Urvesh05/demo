@@ -18,6 +18,6 @@ public class Address {
 
 	public void setCountry(String country) {
 		// TODO Auto-generated method stub
-		https://mkyong.com/java/how-to-compress-serialized-object-into-file/
+		//https://mkyong.com/java/how-to-compress-serialized-object-into-file/
 	}
 }
