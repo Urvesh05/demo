@@ -11,7 +11,7 @@ public class CheckDirectoryEmpty {
 		// TODO Auto-generated method stub
 		
 		
-		File file = new File("C:\\Users\\Urvesh Gayakwad\\git\\demo\\demo\\empty");
+		File file = new File("/home/urvesh.gayakwad/git/demo/demo/empty");
 		
 		if(file.isDirectory()){
 				

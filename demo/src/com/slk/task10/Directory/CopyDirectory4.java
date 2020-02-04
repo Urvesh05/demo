@@ -35,10 +35,12 @@ public class CopyDirectory4 {
 		
 		 //Check if sourceFolder is a directory or file
         //If sourceFolder is file; then copy the file directly to new location
+		
         if (sourceFolder.isDirectory()) 
         {
         	
             //Verify if destinationFolder is already present; If not then create it
+        	
             if (!destinationFolder.exists()) 
             {
                 destinationFolder.mkdir();
@@ -76,6 +78,9 @@ public class CopyDirectory4 {
 		
 		
 		
+
+
+
 		
 		
 		/*
