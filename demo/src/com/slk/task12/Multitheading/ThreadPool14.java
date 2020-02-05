@@ -8,28 +8,35 @@ public class ThreadPool14 implements Runnable
 {
 	private String name;
 	
-	public ThreadPool14(String s) {
-		// TODO Auto-generated constructor stub
+	public ThreadPool14(String s)//Contractor
+	{
+		
 		this.name=s;
 	}
 	
 		
-	public void run() {
-		// TODO Auto-generated method stub
-
-
+	public void run() //Runnable Abstract Method 
+	{
+		
 		System.out.println(Thread.currentThread().getName()+" Message "+name);
 		
 		processmessage();//call processmessage method that sleeps the thread for 2 seconds  
+		
 	}
-	private void processmessage() {
+	
+	private void processmessage() 
+	{
 		// TODO Auto-generated method stub
-		  System.out.println(Thread.currentThread().getName()+" (End)");//prints thread name  
+		  System.out.println(Thread.currentThread().getName()+" End Thread \n");//prints thread name  
 		 
 		  
-		  try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
+		  try 
+		  {
+			  Thread.sleep(2000);//2 second
+			  
+		  } catch (InterruptedException e) 
+		  
+		  {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -38,20 +45,23 @@ public class ThreadPool14 implements Runnable
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		ExecutorService excExecutorService=Executors.newFixedThreadPool(5);//creating a pool of 5 threads  
-		for (int i = 0; i < 10; i++) {
+		
+		for (int i = 0; i < 10; i++) 
+		{
 			
-			Runnable work =new ThreadPool14(""+i);
+			Runnable work =new ThreadPool14(" "+i);//
+			
 			excExecutorService.execute(work);
 		}
 		excExecutorService.shutdown();
-		while (!excExecutorService.isTerminated()) {
-			
-
-		}
-		System.out.println("alll thread finis ");
+		
+		while (!excExecutorService.isTerminated()) 
+		{}
+		
+		System.out.println("All thread finis ");
 		
 	}
-
 
 }
