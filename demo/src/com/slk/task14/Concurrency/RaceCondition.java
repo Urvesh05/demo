@@ -1,6 +1,7 @@
 package com.slk.task14.Concurrency;
 
-//ekj resource upre work kare 6e thethi teni value ma change thay 6e.(Resource i )
+
+//Multipale thread ekj resource upre work kare 6e thethi teni value ma change thay 6e.(Resource i )
 
 
 
