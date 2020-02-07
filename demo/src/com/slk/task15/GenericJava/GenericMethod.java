@@ -2,24 +2,27 @@ package com.slk.task15.GenericJava;
 
 public class GenericMethod {
 	
+	//static method
 	// generic method printArray
 	public static <E> void getArray(E[] inputArray)
 	{
 		//System.out.println("======Static Method ==========\n");
 		
 		 // Display array elements
-		for (E e : inputArray) {
+		for (E e : inputArray) 
+		{
 			System.out.printf(" %s ",e);
 		}
 		
 	}
 	
-	
+	//Non Static method 
 	public <E> void nonStatic(E[] doubleArray)
 	{
 		//System.out.println("======Non-Static Method ==========\n");
 
-		for (E e1 : doubleArray) {
+		for (E e1 : doubleArray) 
+		{
 			System.out.println(e1);
 		}
 		

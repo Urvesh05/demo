@@ -25,7 +25,7 @@ public class GenericClass {
 		// TODO Auto-generated method stub
 		
 		
-		MyClass<Integer> m= new MyClass();
+		MyClass<Integer> m= new MyClass();//MyClass object creation time (Type Define) ex.int,str; 
 		m.add(new Integer(54));
 		
 		MyClass<String> s= new MyClass();
