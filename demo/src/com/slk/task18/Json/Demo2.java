@@ -17,24 +17,31 @@ public class Demo2 {
 		array.add(obj);
 		
 		
-		JSONObject obj2 = new JSONObject();
-		obj2.put("student",array);
 		
 		//obj.put(array, obj); 
-		//System.out.println("obj2 "+obj2);
+	
 		
-		obj2.put("Villege", "surat");
+		
+		//obj2.put("Villege", "surat");
 		
 		JSONObject obj3 = new JSONObject();
+		obj3.put("Villege", "surat");
+		
 		
 		JSONArray ar= new JSONArray();
-		ar.add("add");
+		ar.add(obj3);
 		
-		ar.add(obj2);
+		JSONObject obj2 = new JSONObject();
+		obj2.put("student",array);
+		obj2.put("Address",ar);
 		
-		System.out.println(obj3);
-		System.out.println("arr"+ar);
-
+		System.out.println(obj2);
+		
+		
+		//ar.add(obj2);
+		
+		//System.out.println(obj3);
+	
 		/*
 		JSONObject obj3 = new JSONObject();
 		obj3.put("Villege", "Vlasd");

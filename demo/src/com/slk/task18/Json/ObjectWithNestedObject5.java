@@ -17,13 +17,13 @@ public class ObjectWithNestedObject5 {
 		obj.put("name", "urvesh");
 		obj.put("age", 25);
 		
-		
+		//Obj 1 nasted in Obj 2
 		obj.put("cars", obj2);
 		
 		
 		System.out.println("=========Nested Object ========");
 		
-		System.out.println("Nested Obj = \n" +obj);
+		System.out.println(obj);
 		
 		
 		

@@ -4,12 +4,12 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 
-public class ArrayWithObject2 {
+public class ArrayWithObject2_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-JSONObject obj = new JSONObject();
+		JSONObject obj = new JSONObject();
 		
 		obj.put("firstName","Hari");
 		obj.put("lastName", "Patel");
