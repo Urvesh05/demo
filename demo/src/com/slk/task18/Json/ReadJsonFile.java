@@ -40,7 +40,9 @@ public class ReadJsonFile {
 			// TODO: handle exception
 		}
 		
-		JSONObject studentObj=student.get("firstName");
+		//JSONObject studentObj=student.get("firstName");
+		
+		
 		//https://howtodoinjava.com/library/json-simple-read-write-json-examples/
 		//https://mkyong.com/java/json-simple-example-read-and-write-json/
 		

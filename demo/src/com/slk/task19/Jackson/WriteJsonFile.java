@@ -12,19 +12,23 @@ public class WriteJsonFile {
 
 		
 		JSONObject studentDetail = new JSONObject();
+	
 		studentDetail.put("name", "Jigar");
 		studentDetail.put("age", 30	);
+		System.out.println(studentDetail);
 		
+		/*
 		JSONArray studentList = new JSONArray();
 		studentList.add(studentDetail);
 		System.out.println(studentList);
+		*/
 		
 		
 		try(FileWriter fileWriter = new FileWriter("/home/urvesh.gayakwad/git/demo/demo/jsonfile/user.json")) 
 		{
 			
-			fileWriter.write(studentList.toJSONString());
-			fileWriter.flush();
+			fileWriter.write(studentDetail.toJSONString());
+			fileWriter.flush();System.out.println();
 			
 		} catch (Exception e) {
 			// TODO: handle exception
