@@ -22,22 +22,22 @@ public class JsonStreamingGenerator5 {
 		 try (JsonGenerator jGenerator = mapper.getFactory().
 		 createGenerator( new File("/home/urvesh.gayakwad/git/demo/demo/jsonfile/user1.json") , JsonEncoding.UTF8)) {
        
-	        jGenerator.writeStartObject();  //start Object                                // {
+	        jGenerator.writeStartObject();  //start Object        // {
 	
 	        jGenerator.writeStringField("name", "Hari");  				// "name" : "Hari"
 	        jGenerator.writeNumberField("age", 18);         			// "age" : 18
 	
 	        jGenerator.writeFieldName("msg");                          // "messages" :
 	
-	        jGenerator.writeStartArray(); //start Array                 // [
+	        jGenerator.writeStartArray(); //start Array               // [
 	
 	        jGenerator.writeString("Hello");                           	// "msg 1"
 	        jGenerator.writeString("How are ");                         // "msg 2"
 	        jGenerator.writeString("you");                            	// "msg 3"
 	
-	        jGenerator.writeEndArray();  //end aaray                    // ]
+	        jGenerator.writeEndArray();  //end aaray                 // ]
 	
-	        jGenerator.writeEndObject();  //enad object                                  // }
+	        jGenerator.writeEndObject();  //enad object          // }
 		
 	        
 	        System.out.println("write File ok");

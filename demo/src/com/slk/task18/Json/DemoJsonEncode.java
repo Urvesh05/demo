@@ -51,7 +51,7 @@ public class DemoJsonEncode {
 		
 		String name=(String) jsonObject.get("name");
 		Long age = (Long) jsonObject.get("age");
-		Double salary = (Double) jsonObject.get("salary");
+		Long salary = (Long) jsonObject.get("salary");
 		
 		System.out.println(name+age+salary);
 		
