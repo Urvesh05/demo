@@ -1,7 +1,7 @@
 package com.Acess.Modifire;
 import com.slk.task.opps.*;
 
-public class AcessModifireDefault1 extends AcessModifireDefault {
+public class AcessModifireDefault1 {//extends //AcessModifireDefault {
 	
 	public void msg()
 	{

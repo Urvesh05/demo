@@ -16,10 +16,10 @@ public class AcessModifireProtectedChild extends AcessModifireProtected {
 		
 //		
 		AcessModifireProtected acessModifireProtectedChild = new AcessModifireProtectedChild();
-		acessModifireProtectedChild.msg();
+		//acessModifireProtectedChild.msg();
 		
 		AcessModifireProtected acessModifireProtected = new AcessModifireProtected();
-		acessModifireProtected.msg();
+		//acessModifireProtected.msg();
 		
 //		AcessModifireProtectedChild a1= new AcessModifireProtectedChild();
 //		a1.msg();

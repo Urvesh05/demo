@@ -28,8 +28,8 @@ public class CollectionPrectice {
 		System.out.println(map);
 		
 		//handel duplicate key
-		map2.forEach((key, value) -> map1.merge( key, value, (v1, v2) -> v1.equalsIgnoreCase(v2) ? v1 : v1 + "," + v2)
-			);
+		//map2.forEach((key, value) -> map1.merge( key, value, (v1, v2) -> v1.equalsIgnoreCase(v2) ? v1 : v1 + "," + v2)
+		//	);
 	
 	}
 	public static void main(String[] args) {

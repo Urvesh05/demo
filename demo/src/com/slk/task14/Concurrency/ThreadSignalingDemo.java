@@ -13,7 +13,7 @@ public class ThreadSignalingDemo {
 	public void before() {
 		signal = new SignalDemo();
 	}
-
+/*
 	//@Test
 	public void signalIsNotSet() {
 		assertFalse(signal.isSignalled());
@@ -102,18 +102,9 @@ public class ThreadSignalingDemo {
 		assertFalse(signal.isSignalled());
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	*/
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
