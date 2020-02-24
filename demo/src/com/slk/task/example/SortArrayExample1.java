@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class SortArray {
+public class SortArrayExample1 {
 	
 	
 	
@@ -139,16 +139,19 @@ public class SortArray {
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		SortArray.arrayDemo1();
-		SortArray.arraydemo2();
-		SortArray.arrayDemo3();
-		SortArray.arrayDemo4();
-		SortArray.arrayDemo5();
+		SortArrayExample1.arrayDemo1();
+		SortArrayExample1.arraydemo2();
+		SortArrayExample1.arrayDemo3();
+		SortArrayExample1.arrayDemo4();
+		SortArrayExample1.arrayDemo5();
 		//SortArray.arrayDemo6();
 	
 	}
 
 }
+
+
+
 
 
 
