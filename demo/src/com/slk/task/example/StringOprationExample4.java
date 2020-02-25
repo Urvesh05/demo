@@ -2,6 +2,7 @@ package com.slk.task.example;
 
 public class StringOprationExample4 {
 	
+	//1. String to char
 	public static void stringToChar() 
 	{
 		String s="Jai Hind";
@@ -17,6 +18,8 @@ public class StringOprationExample4 {
 		}
 	}
 	
+	
+	//2.char to String
 	public static void charToString()
 	{
 		
@@ -34,7 +37,7 @@ public class StringOprationExample4 {
 				
 	}
 	
-	
+	//3.Remove space 
 	public static void removeSpace()
 	{
 		
@@ -49,6 +52,8 @@ public class StringOprationExample4 {
 		
 	}
 	
+	
+	//4.String UpperCase & Lowercase
 	public static void UppreLoweChar() 
 	{
 		System.out.println("\n--------Upper To LoweCharacters--------");
@@ -65,7 +70,7 @@ public class StringOprationExample4 {
 		
 	}
 	
-	
+	//5.String Reverse
 	public static void reverseString() 
 	{
 		
@@ -74,7 +79,7 @@ public class StringOprationExample4 {
 		
 		char[]  c= s.toCharArray();
 		
-		for(int i=c.length-1;i>=0;i--)
+		for(int i=c.length-1;i>=0;i--)//reverse String 
 		{
 			System.out.print(c[i]);
 		}

@@ -7,7 +7,7 @@ public class IntegerToDigitExample5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int num=120;
+		Integer num=123456;
 		
 		System.out.println("\n-------Integer To Digit-------");
 		

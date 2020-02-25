@@ -5,11 +5,9 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class SortArrayExample1 {
+
 	
-	
-	
-	
-	public static void arrayDemo1()//without any method 
+	public static void arrayDemo1()//1.without any method 
 	{
 		int a[] = new int[] {4,2,6,9,1,3};
 		
@@ -36,7 +34,7 @@ public class SortArrayExample1 {
 	
 	
 	
-	public static void arraydemo2() //using Arrays.sort method
+	public static void arraydemo2() //2.using Arrays.sort method
 	{
 		
 		int array[] = new int[] {22,4,45,76,12,54,30,2};
@@ -50,7 +48,7 @@ public class SortArrayExample1 {
 		
 	}
 	
-	public static void arrayDemo3() //using collections.sort method to reverse data
+	public static void arrayDemo3() //3.using collections.sort method to reverse data
 	{
 		System.out.println("\n------Desending Order--------");
 		String s[]=new String[] {"Amit","Haresh","Gita","Naresh","Kamal"};
@@ -62,7 +60,7 @@ public class SortArrayExample1 {
 	}
 	
 	
-	public static void arrayDemo4() //using comparator
+	public static void arrayDemo4() //4.using comparator
 	{
 		String str[] = {"java","php","html","python"};
 		
@@ -88,7 +86,7 @@ public class SortArrayExample1 {
 	}
 
 	
-	public static void arrayDemo5() // Parallel Array Sorting (Comparable objects.)
+	public static void arrayDemo5() // 5.Parallel Array Sorting (Comparable objects.)
 									// parallelism common pool to provide sorting of arrays in parallel
 	{
 		

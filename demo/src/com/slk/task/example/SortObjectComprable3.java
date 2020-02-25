@@ -13,7 +13,7 @@ public class SortObjectComprable3
 		// TODO Auto-generated method stub
 		
 		
-		List< Emplpyee> emplpyees = new ArrayList<Emplpyee>();
+		List< Emplpyee> emplpyees = new ArrayList<Emplpyee>();// int sort 
 		emplpyees.add(new Emplpyee("Haresh", 12, "Rajkot"));
 		emplpyees.add(new Emplpyee("Amar", 30, "Narmda"));
 		emplpyees.add(new Emplpyee("Umesh", 20, "Bavnagar"));

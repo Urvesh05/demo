@@ -29,6 +29,7 @@ public class PatternExample2 {
 		System.out.println("\npattern ==> 2");
 		int n=5;
 		int i,j,k;
+		
 		for( i=1;i<=n;i++)
 		{
 			

@@ -7,27 +7,32 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Base64;
 
-public class ImageConvert7 {
+public class ImageConvert7 
+{
 
 	public static void main(String[] args) throws Exception 
 	{
 		 	String imagePath = "/home/urvesh.gayakwad/git/demo/demo/Abc/p.jpg";
-		 	
 		    System.out.println("=================Encoder Image to Base 64!=================");
 		    
 		    String base64ImageString = encoder(imagePath);
-		    System.out.println("Base64ImageString = " + base64ImageString);
+		    
+		    System.out.println("data:image/jpeg;base64," + base64ImageString);//copy path to past url
 		 
+		   // System.out.println("DONE!");
+		    
+		    /*
 		    System.out.println("=================Decoder Base64ImageString to Image!=================");
-		    decoder(base64ImageString, "/home/urvesh.gayakwad/git/demo/demo/Abc/p1.jpg");
+		    decoder(base64ImageString, "/home/urvesh.gayakwad/git/demo/demo/Abc/p3.jpg");
+		    
 		    decoder(base64ImageString, "/home/urvesh.gayakwad/git/demo/demo/Abc/p2.txt");
 		   // System.out.println("Base64ImageString = " + base64ImageString);
-		    
-		    System.out.println("DONE!");
+		    */
+		   
 		    
 	}
 		    
-		    public static String encoder(String imagePath) 
+		    public static String encoder(String imagePath) //method 
 		    {
 		        String base64Image = "";
 		        File file = new File(imagePath);
@@ -42,12 +47,26 @@ public class ImageConvert7 {
 		        } catch (FileNotFoundException e) 
 		        {
 		          System.out.println("Image not found" + e);
-		        } catch (IOException ioe) {
+		          
+		        } catch (IOException ioe)
+		        
+		        {
 		          System.out.println("Exception while reading the Image " + ioe);
 		        }
 		        return base64Image;
 		      }
+}
 		     
+
+
+
+
+
+
+
+
+
+		    /*
 		      public static void decoder(String base64Image, String pathFile)
 		      {
 		        try (FileOutputStream imageOutFile = new FileOutputStream(pathFile)) 
@@ -62,10 +81,17 @@ public class ImageConvert7 {
 		        } catch (IOException ioe) 
 		        {
 		          System.out.println("Exception while reading the Image " + ioe);
+		          
 		        }
+		        
 		
-	}
-}
+	}*/
+//}
+
+
+
+
+
 
 //https://www.youtube.com/watch?v=M1aWWLnygdU
 	//https://www.youtube.com/watch?v=bl532AUqzNk
